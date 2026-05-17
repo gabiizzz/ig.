@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1200.0" style="-fx-background-color: #8f8888;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.servotester.HelloController">
+   <children>
+      <Label layoutX="475.0" layoutY="14.0" text="Servo Tester" underline="true">
+         <font>
+            <Font name="Century Gothic" size="44.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.46035243971232276" centerY="0.6515151442903462" focusDistance="0.09174311926605494" radius="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.20339182019233704" green="0.49473685026168823" blue="0.16491228342056274" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.04639376327395439" green="0.1473684161901474" blue="0.05649122968316078" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="button" layoutX="80.0" layoutY="121.0" mnemonicParsing="false" onAction="#thirtyfive" prefHeight="120.0" prefWidth="121.0" style="-fx-background-color: #85a193; -fx-border-color: #507865; -fx-border-width: 3;">
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="4.0">
+               <color>
+                  <Color red="0.4000000059604645" green="0.36888888478279114" blue="0.36888888478279114" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="button1" layoutX="191.0" layoutY="275.0" mnemonicParsing="false" onAction="#axonmax" prefHeight="120.0" prefWidth="121.0" style="-fx-background-color: #85a193; -fx-border-color: #507865; -fx-border-width: 3;">
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="4.0">
+               <color>
+                  <Color red="0.4000000059604645" green="0.36888888478279114" blue="0.36888888478279114" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="button2" layoutX="539.0" layoutY="121.0" mnemonicParsing="false" onAction="#swyft" prefHeight="120.0" prefWidth="121.0" style="-fx-background-color: #85a193; -fx-border-color: #507865; -fx-border-width: 3;">
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="4.0">
+               <color>
+                  <Color red="0.4000000059604645" green="0.36888888478279114" blue="0.36888888478279114" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="button3" layoutX="761.0" layoutY="121.0" mnemonicParsing="false" onAction="#swyft2" prefHeight="120.0" prefWidth="121.0" style="-fx-background-color: #85a193; -fx-border-color: #507865; -fx-border-width: 3;">
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="4.0">
+               <color>
+                  <Color red="0.4000000059604645" green="0.36888888478279114" blue="0.36888888478279114" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="button4" layoutX="987.0" layoutY="121.0" mnemonicParsing="false" onAction="#swyft3" prefHeight="120.0" prefWidth="121.0" style="-fx-background-color: #85a193; -fx-border-color: #507865; -fx-border-width: 3;">
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="4.0">
+               <color>
+                  <Color red="0.4000000059604645" green="0.36888888478279114" blue="0.36888888478279114" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Label layoutX="131.0" layoutY="249.0" text="35">
+         <font>
+            <Font name="Book Antiqua" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="195.0" layoutY="403.0" text="Axon MAX+">
+         <font>
+            <Font name="Book Antiqua" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="539.0" layoutY="249.0" text="Torque Swyft">
+         <font>
+            <Font name="Book Antiqua" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="759.0" layoutY="249.0" text="Balance Swyft">
+         <font>
+            <Font name="Book Antiqua" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="992.0" layoutY="249.0" text="Speed Swyft">
+         <font>
+            <Font name="Book Antiqua" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="button5" layoutX="80.0" layoutY="430.0" mnemonicParsing="false" onAction="#gobilda" prefHeight="120.0" prefWidth="121.0" style="-fx-background-color: #85a193; -fx-border-color: #507865; -fx-border-width: 3;">
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="4.0">
+               <color>
+                  <Color red="0.4000000059604645" green="0.36888888478279114" blue="0.36888888478279114" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="button6" layoutX="314.0" layoutY="430.0" mnemonicParsing="false" onAction="#gobilda2" prefHeight="120.0" prefWidth="121.0" style="-fx-background-color: #85a193; -fx-border-color: #507865; -fx-border-width: 3;">
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="4.0">
+               <color>
+                  <Color red="0.4000000059604645" green="0.36888888478279114" blue="0.36888888478279114" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="button7" layoutX="530.0" layoutY="430.0" mnemonicParsing="false" onAction="#gobilda3" prefHeight="120.0" prefWidth="121.0" style="-fx-background-color: #85a193; -fx-border-color: #507865; -fx-border-width: 3;">
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="4.0">
+               <color>
+                  <Color red="0.4000000059604645" green="0.36888888478279114" blue="0.36888888478279114" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="button8" layoutX="760.0" layoutY="430.0" mnemonicParsing="false" onAction="#plex" prefHeight="120.0" prefWidth="121.0" style="-fx-background-color: #85a193; -fx-border-color: #507865; -fx-border-width: 3;">
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="4.0">
+               <color>
+                  <Color red="0.4000000059604645" green="0.36888888478279114" blue="0.36888888478279114" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="button9" layoutX="986.0" layoutY="430.0" mnemonicParsing="false" onAction="#plex2" prefHeight="120.0" prefWidth="121.0" style="-fx-background-color: #85a193; -fx-border-color: #507865; -fx-border-width: 3;">
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="4.0">
+               <color>
+                  <Color red="0.4000000059604645" green="0.36888888478279114" blue="0.36888888478279114" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Label layoutX="67.0" layoutY="557.0" text="Speed GoBILDA">
+         <font>
+            <Font name="Book Antiqua" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="272.0" layoutY="557.0" text="Super Speed GoBILDA">
+         <font>
+            <Font name="Book Antiqua" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="512.0" layoutY="557.0" text="Torque GoBILDA">
+         <font>
+            <Font name="Book Antiqua" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="767.0" layoutY="557.0" text="Torque Plex">
+         <font>
+            <Font name="Book Antiqua" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="999.0" layoutY="557.0" text="Speed Plex">
+         <font>
+            <Font name="Book Antiqua" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="button10" layoutX="305.0" layoutY="121.0" mnemonicParsing="false" onAction="#rev" prefHeight="120.0" prefWidth="121.0" style="-fx-background-color: #85a193; -fx-border-color: #507865; -fx-border-width: 3;">
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="4.0">
+               <color>
+                  <Color red="0.4000000059604645" green="0.36888888478279114" blue="0.36888888478279114" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Label layoutX="348.0" layoutY="249.0" text="Rev">
+         <font>
+            <Font name="Book Antiqua" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="button11" layoutX="416.0" layoutY="275.0" mnemonicParsing="false" onAction="#axonmini" prefHeight="120.0" prefWidth="121.0" style="-fx-background-color: #85a193; -fx-border-color: #507865; -fx-border-width: 3;">
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="4.0">
+               <color>
+                  <Color red="0.4000000059604645" green="0.36888888478279114" blue="0.36888888478279114" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="button12" layoutX="652.0" layoutY="275.0" mnemonicParsing="false" onAction="#axonmk2max" prefHeight="120.0" prefWidth="121.0" style="-fx-background-color: #85a193; -fx-border-color: #507865; -fx-border-width: 3;">
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="4.0">
+               <color>
+                  <Color red="0.4000000059604645" green="0.36888888478279114" blue="0.36888888478279114" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="button13" layoutX="874.0" layoutY="275.0" mnemonicParsing="false" onAction="#axonmk2mini" prefHeight="120.0" prefWidth="121.0" style="-fx-background-color: #85a193; -fx-border-color: #507865; -fx-border-width: 3;">
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="4.0">
+               <color>
+                  <Color red="0.4000000059604645" green="0.36888888478279114" blue="0.36888888478279114" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Label layoutX="419.0" layoutY="403.0" text="Axon MINI+">
+         <font>
+            <Font name="Book Antiqua" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="637.0" layoutY="403.0" text="Axon MAX MK2">
+         <font>
+            <Font name="Book Antiqua" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="859.0" layoutY="403.0" text="Axon MINI MK2">
+         <font>
+            <Font name="Book Antiqua" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1200.0" style="-fx-background-color: #8f8888;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.servotester.ControllerGobilda">
+   <children>
+      <Button fx:id="back" layoutX="43.0" layoutY="701.0" mnemonicParsing="false" onAction="#back" text="back" />
+      <Label layoutX="524.0" layoutY="14.0" text="GOBILDA (S)" textFill="#1e567b" underline="true">
+         <font>
+            <Font name="Wide Latin" size="44.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="view" fitHeight="445.0" fitWidth="474.0" layoutX="26.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.43157893419265747" green="0.40760233998298645" blue="0.40760233998298645" />
+               </color>
+            </DropShadow>
+         </effect></ImageView>
+      <Group />
+      <Label layoutX="524.0" layoutY="91.0" prefHeight="32.0" prefWidth="129.0" text="Specificatii:" wrapText="true">
+         <font>
+            <Font name="Berlin Sans FB" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="524.0" layoutY="131.0" prefHeight="32.0" prefWidth="335.0" text="• Operating Voltage: 4.8 ~ 7.4V" wrapText="true">
+         <font>
+            <Font name="Droid Sans" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="524.0" layoutY="163.0" prefHeight="32.0" prefWidth="518.0" text="• Stall Torque: 7.9 kg-cm (4.8V), 9.3 kg-cm (6V), 10.8 kg-cm (7.4V)" wrapText="true">
+         <font>
+            <Font name="Droid Sans" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="524.0" layoutY="195.0" prefHeight="32.0" prefWidth="542.0" text="• Speed: 0.11 sec/60° (4.8V), 0.09 sec/60° (6V), 0.07 sec/60° (7.4V)" wrapText="true">
+         <font>
+            <Font name="Droid Sans" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="524.0" layoutY="226.0" prefHeight="32.0" prefWidth="467.0" text="• Stall Current: 2A (4.8V), 2.5A (6V), 3A (7.4V)" wrapText="true">
+         <font>
+            <Font name="Droid Sans" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="524.0" layoutY="258.0" prefHeight="32.0" prefWidth="298.0" text="• PWM Range: 500 ~ 2500 μsec" wrapText="true">
+         <font>
+            <Font name="Droid Sans" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="524.0" layoutY="290.0" prefHeight="32.0" prefWidth="231.0" text="• Operating Angle: 300°" wrapText="true">
+         <font>
+            <Font name="Droid Sans" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="524.0" layoutY="322.0" prefHeight="32.0" prefWidth="201.0" text="• Dead Band: 4 μsec" wrapText="true">
+         <font>
+            <Font name="Droid Sans" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="524.0" layoutY="354.0" prefHeight="32.0" prefWidth="542.0" text="• Rotation Direction: Clockwise w/ Increasing PWM Signal" wrapText="true">
+         <font>
+            <Font name="Droid Sans" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="524.0" layoutY="386.0" prefHeight="32.0" prefWidth="231.0" text="• Motor Type: Brushed DC" wrapText="true">
+         <font>
+            <Font name="Droid Sans" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="524.0" layoutY="418.0" prefHeight="32.0" prefWidth="410.0" text="• Gearbox: Steel" wrapText="true">
+         <font>
+            <Font name="Droid Sans" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="524.0" layoutY="449.0" prefHeight="32.0" prefWidth="328.0" text="• Output Spline: 25T" wrapText="true">
+         <font>
+            <Font name="Droid Sans" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="524.0" layoutY="481.0" prefHeight="32.0" prefWidth="146.0" text="• Weight: 58g" wrapText="true">
+         <font>
+            <Font name="Droid Sans" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="524.0" layoutY="514.0" prefHeight="32.0" prefWidth="309.0" text="• Cable Length: 300 mm (11.8 in)" wrapText="true">
+         <font>
+            <Font name="Droid Sans" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
