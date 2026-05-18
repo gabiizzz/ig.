@@ -56,8 +56,9 @@ public class Controller35 implements Initializable{
         RotateTransition rotate= new RotateTransition();
         rotate.setNode(arm);
         angle=135;
-        rotate.setDuration(Duration.seconds(setDuration(angle)));
+        rotate.setDuration(Duration.seconds(setDuration(angle, 0.012)));
         rotate.setToAngle(angle);
+//        System.out.println(rotate.getDuration());
         rotate.play();
     }
 
@@ -66,8 +67,9 @@ public class Controller35 implements Initializable{
         RotateTransition rotate= new RotateTransition();
         rotate.setNode(arm);
         angle=0;
-        rotate.setDuration(Duration.seconds(setDuration2(angle, 1.35)));
+        rotate.setDuration(Duration.seconds(setDuration2(angle, 1, 0.012)));
         rotate.setToAngle(angle);
+//        System.out.println(rotate.getDuration());
         rotate.play();
     }
 
@@ -76,8 +78,9 @@ public class Controller35 implements Initializable{
         RotateTransition rotate= new RotateTransition();
         rotate.setNode(arm);
         angle=-135;
-        rotate.setDuration(Duration.seconds(setDuration(angle)));
+        rotate.setDuration(Duration.seconds(setDuration(angle, 0.012)));
         rotate.setToAngle(angle);
+//        System.out.println(rotate.getDuration());
         rotate.play();
     }
 
