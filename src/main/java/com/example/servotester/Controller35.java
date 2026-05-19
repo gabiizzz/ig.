@@ -14,10 +14,8 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import com.example.servotester.DurationThing;
 import javafx.util.Duration;
-import static com.example.servotester.DurationThing.setDuration;
-import static com.example.servotester.DurationThing.setDuration2;
+import static com.example.servotester.DurationThing.*;
 
 public class Controller35 implements Initializable{
     @FXML
@@ -48,6 +46,7 @@ public class Controller35 implements Initializable{
     }
 
     double angle=0;
+    double lastAngle;
 
 
 
@@ -60,6 +59,7 @@ public class Controller35 implements Initializable{
         rotate.setToAngle(angle);
 //        System.out.println(rotate.getDuration());
         rotate.play();
+        lastAngle=angle;
     }
 
     @FXML
@@ -67,7 +67,8 @@ public class Controller35 implements Initializable{
         RotateTransition rotate= new RotateTransition();
         rotate.setNode(arm);
         angle=0;
-        rotate.setDuration(Duration.seconds(setDuration2(angle, 1, 0.012)));
+//        rotate.setDuration(Duration.seconds(setDuration2(angle, 1, 0.012)));
+        rotate.setDuration(Duration.seconds(setDurationForZero(lastAngle, 0.012)));
         rotate.setToAngle(angle);
 //        System.out.println(rotate.getDuration());
         rotate.play();
@@ -82,6 +83,7 @@ public class Controller35 implements Initializable{
         rotate.setToAngle(angle);
 //        System.out.println(rotate.getDuration());
         rotate.play();
+        lastAngle=angle;
     }
 
     @Override

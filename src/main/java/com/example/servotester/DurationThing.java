@@ -9,11 +9,13 @@ public class DurationThing {
         return time= (int)(ang*speed);
     }
 
-    public static double setDuration2(double ang, double sec, double speed){
+    public static double setDurationForZero(double lastAng, /*double ang, double sec,*/ double speed){            //doar daca angle=0
         double time;
-        if(ang<0) ang=-ang;
-        if(ang==0) return time= sec; //... :(
-        return time= (int)(ang*speed);
+//        if(ang<0) ang=-ang;
+        if(lastAng<0) lastAng=-lastAng;
+//        if(ang==0) return time= sec; //... :(
+//        if(ang==0) return time= (int)lastAng*speed;
+        return time= (int)(lastAng*speed);
     }
 
 }
