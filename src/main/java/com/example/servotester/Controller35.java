@@ -10,6 +10,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.transform.Rotate;
 import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
@@ -46,7 +47,7 @@ public class Controller35 implements Initializable{
     }
 
     double angle=0;
-    double lastAngle;
+    double lastAngle=0;
 
 
 
@@ -55,7 +56,7 @@ public class Controller35 implements Initializable{
         RotateTransition rotate= new RotateTransition();
         rotate.setNode(arm);
         angle=135;
-        rotate.setDuration(Duration.seconds(setDuration(angle, 0.012)));
+        rotate.setDuration(Duration.seconds(setDuration(angle, lastAngle, 0.012)));
         rotate.setToAngle(angle);
 //        System.out.println(rotate.getDuration());
         rotate.play();
@@ -72,6 +73,7 @@ public class Controller35 implements Initializable{
         rotate.setToAngle(angle);
 //        System.out.println(rotate.getDuration());
         rotate.play();
+        lastAngle=angle;
     }
 
     @FXML
@@ -79,7 +81,7 @@ public class Controller35 implements Initializable{
         RotateTransition rotate= new RotateTransition();
         rotate.setNode(arm);
         angle=-135;
-        rotate.setDuration(Duration.seconds(setDuration(angle, 0.012)));
+        rotate.setDuration(Duration.seconds(setDuration(angle, lastAngle, 0.012)));
         rotate.setToAngle(angle);
 //        System.out.println(rotate.getDuration());
         rotate.play();
