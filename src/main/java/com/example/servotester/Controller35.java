@@ -49,14 +49,12 @@ public class Controller35 implements Initializable{
     double angle=0;
     double lastAngle=0;
 
-
-
     @FXML
     protected void onR(){
         RotateTransition rotate= new RotateTransition();
         rotate.setNode(arm);
         angle=135;
-        rotate.setDuration(Duration.seconds(setDuration(angle, lastAngle, 0.012)));
+        rotate.setDuration(Duration.seconds(setDur(angle, lastAngle, 0.012)));
         rotate.setToAngle(angle);
 //        System.out.println(rotate.getDuration());
         rotate.play();
@@ -69,7 +67,7 @@ public class Controller35 implements Initializable{
         rotate.setNode(arm);
         angle=0;
 //        rotate.setDuration(Duration.seconds(setDuration2(angle, 1, 0.012)));
-        rotate.setDuration(Duration.seconds(setDurationForZero(lastAngle, 0.012)));
+        rotate.setDuration(Duration.seconds(setDur(angle, lastAngle, 0.012)));
         rotate.setToAngle(angle);
 //        System.out.println(rotate.getDuration());
         rotate.play();
@@ -81,7 +79,7 @@ public class Controller35 implements Initializable{
         RotateTransition rotate= new RotateTransition();
         rotate.setNode(arm);
         angle=-135;
-        rotate.setDuration(Duration.seconds(setDuration(angle, lastAngle, 0.012)));
+        rotate.setDuration(Duration.seconds(setDur(angle, lastAngle, 0.012)));
         rotate.setToAngle(angle);
 //        System.out.println(rotate.getDuration());
         rotate.play();
