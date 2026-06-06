@@ -35,7 +35,7 @@
             <Font name="Droid Sans" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="524.0" layoutY="163.0" prefHeight="32.0" prefWidth="446.0" text="• Stall Torque: 13.5 kg-cm" wrapText="true">
+      <Label layoutX="524.0" layoutY="163.0" prefHeight="32.0" prefWidth="211.0" text="• Stall Torque: 13.5 kg-cm" wrapText="true">
          <font>
             <Font name="Droid Sans" size="18.0" />
          </font>
@@ -95,5 +95,10 @@
             <Font name="Droid Sans" size="18.0" />
          </font>
       </Label>
+      <ImageView fx:id="servo" fitHeight="262.0" fitWidth="348.0" layoutX="902.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="arm" fitHeight="127.0" fitWidth="146.0" layoutX="944.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="L" layoutX="919.0" layoutY="365.0" mnemonicParsing="false" onAction="#onL" prefHeight="42.0" prefWidth="50.0" text="L" />
+      <Button fx:id="P" layoutX="980.0" layoutY="365.0" mnemonicParsing="false" onAction="#onP" prefHeight="42.0" prefWidth="52.0" text="P" />
+      <Button fx:id="R" layoutX="1040.0" layoutY="365.0" mnemonicParsing="false" onAction="#onR" prefHeight="42.0" prefWidth="52.0" text="R" />
    </children>
 </AnchorPane>
