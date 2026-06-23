@@ -55,7 +55,7 @@ public class ControllerSwyft implements Initializable {
         RotateTransition rotate = new RotateTransition();
         rotate.setNode(arm);
         angle = 160;
-        rotate.setDuration(Duration.seconds(setDur(angle, lastAngle, 0.012)));
+        rotate.setDuration(Duration.seconds(setDur(angle, lastAngle, 0.0112)));
         rotate.setToAngle(angle);
         rotate.play();
         lastAngle = angle;
@@ -66,7 +66,7 @@ public class ControllerSwyft implements Initializable {
         RotateTransition rotate = new RotateTransition();
         rotate.setNode(arm);
         angle = 0;
-        rotate.setDuration(Duration.seconds(setDur(angle, lastAngle, 0.012)));
+        rotate.setDuration(Duration.seconds(setDur(angle, lastAngle, 0.0112)));
         rotate.setToAngle(angle);
         rotate.play();
         lastAngle = angle;
@@ -77,7 +77,7 @@ public class ControllerSwyft implements Initializable {
         RotateTransition rotate = new RotateTransition();
         rotate.setNode(arm);
         angle = -160;
-        rotate.setDuration(Duration.seconds(setDur(angle, lastAngle, 0.012)));
+        rotate.setDuration(Duration.seconds(setDur(angle, lastAngle, 0.0112)));
         rotate.setToAngle(angle);
         rotate.play();
         lastAngle = angle;
